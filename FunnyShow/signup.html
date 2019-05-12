@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="shortcut icon" href="bitbug_favicon%20(2).ico">
+    <link href="lib/bootstrap-3.3.7/css/bootstrap.css" type="text/css" rel="stylesheet">
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <!--图标-->
+            <span class="navbar-brand"><a href="index.html">娱乐看点</a></span>
+            <button class="navbar-toggle" data-toggle="collapse" data-target="#togglemenu">
+                <!--icon-bar是样式的划线-->
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="togglemenu">
+            <ul class="nav navbar-nav" id="mytab">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="#">国内</a></li>
+                <li><a href="#">国际</a></li>
+                <li><a href="#">生活</a></li>
+                <li><a href="#">社会</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="login.html">登陆</a></li>
+                <li class="active"><a href="signup.html">注册</a></li>
+            </ul>
+            <form class="navbar-form navbar-right">
+                <div class="form-group">
+                    <div class="input-group">
+                        <input list="search" class="form-control" placeholder="输入您要搜索的内容" id="navigator-search" autocomplete="off">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default">搜索</button>
+                        </span>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<datalist id="search">
+    <option>吴亦凡新歌-大碗宽面</option>
+    <option>奔跑吧兄第首播</option>
+    <option>刘强东案件最新进展</option>
+    <option>台湾台北发生3.4级地震</option>
+    <option>江浙沪强降雨天气来袭</option>
+    <option>最二哈士奇</option>
+    <option>深圳实行最新车规</option>
+    <option>广东13岁女童拥有160的智商</option>
+    <option>南京的樱花开了</option>
+    <option>中山大学南方学院又上新闻</option>
+</datalist>
+<div class="container container-small">
+    <h1>注册
+        <small>没有账户?<a href="signup.html">注册</a></small>
+    </h1>
+    <form>
+        <div class="form-group">
+            <label>用户名/手机/邮箱</label>
+            <input type="text" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>验证码</label>
+            <div class="input-group">
+                <input type="text" class="form-control">
+                <div class="input-group-btn">
+                    <div class="btn btn-default">获取验证码</div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>密码</label>
+            <input type="password" class="form-control">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-block">注册</button>
+        </div>
+        <div class="form-group">
+            注册娱乐看点即代表你同意<a href="#">娱乐看点条款</a>
+        </div>
+    </form>
+</div>
+<div class="footer">
+    © 2018-2019 娱乐看点 <a href="#">About NetEase</a>
+</div>
+</body>
+<script src="lib/jquery/jquery-2.1.1.min.js"></script>
+<script src="lib/bootstrap-3.3.7/js/bootstrap.js"></script>
+<script>
+    $('#mytab a').click(function () {
+        $(this).tab('show');
+    });
+    $('.side-bar a').click(function () {
+        $('.active').removeClass("active");
+        $(this).addClass('active');
+    })
+</script>
+</html>

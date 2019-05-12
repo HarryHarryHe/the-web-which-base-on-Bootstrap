@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>电影详情</title>
+    <link rel="shortcut icon" href="bitbug_favicon%20(2).ico">
+    <style type="text/css">
+        body{
+            background: #EEE7E7;
+        }
+        .bnt { /* 按钮美化 */
+            float: right;
+            filter: blur(77);
+            width: 80px; /* 宽度 */
+            height: 30px; /* 高度 */
+            border-width: 0px; /* 边框宽度 */
+            border-radius: 3px; /* 边框半径 */
+            background: #D8BBBB; /* 背景颜色 */
+            cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
+            outline: none; /* 不显示轮廓线 */
+            font-family: Microsoft YaHei; /* 设置字体 */
+            color: white; /* 字体颜色 */
+            font-size: 17px; /* 字体大小 */
+            border-radius: 8px;
+        }
+        .bnt:hover { /* 鼠标移入按钮范围时改变颜色 */
+            background: #E2BFC0;
+        }
+        .tu img {
+            width: 100%;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <div style="background-color:#EEE7E7" id="content">
+        <h1>
+            <span property="v:itemreviewed">流浪地球</span>
+            <span class="year">(2019)</span>
+        </h1>
+        <div class="grid-16-8 clearfix">
+            <div class="article">
+                <div style="background-color: #EEE7E7" class="indent clearfix">
+                    <div class="subjectwrap clearfix">
+                        <div class="subject clearfix">
+                            <div class="tu" style="text-align: center;background-color: #46463E" id="mainpic">
+                                <a class="nbgnbg" href="https://movie.douban.com/subject/26266893/photos?type=R"
+                                   title="点击看更多海报">
+                                    <img src="img/LiuMovieImg/m.jpg" title="点击看更多海报" alt="流浪地球" rel="v:image">
+                                </a>
+                            </div>
+                            <div style="margin-top: 50px;" id="info">
+                                <span class="pl"><strong>导演:</strong></span> 郭帆 <br>
+                                <span class="pl"><strong>编剧:</strong></span> 龚格尔 / 严东旭/ 郭帆 / ... <br>
+                                <span class="pl"><strong>主演:</strong></span> 吴京 / 屈楚萧/ 郭帆 / 李光洁/吴孟达/... <br>
+                                <span class="pl"><strong>类型:</strong></span> <span property="v:genre">科幻</span> / <span
+                                    property="v:genre">灾难</span><br>
+                                <span class="pl"><strong>制片国家/地区:</strong></span> 中国大陆<br>
+                                <span class="pl"><strong>语言:</strong></span> 汉语普通话 / 英语 / 俄语 / 法语 / 日语 / 韩语 / 印尼语<br>
+                                <span class="pl"><strong>上映日期:</strong></span> <span property="v:initialReleaseDate" content="2019-02-05(中国大陆)">2019-02-05(中国大陆)</span><br>
+                                <span class="pl"><strong>片长:</strong></span> <span property="v:runtime" content="125"><strong>125分钟</strong></span><br>
+                                <span class="pl"><strong>又名:</strong></span> The Wandering Earth<br>
+                            </div>
+                        </div>
+                        <div id="interest_sectl">
+                            <div class="rating_wrap clearbox" rel="v:rating">
+                                <div class="clearfix">
+                                    <div class="rating_logo ll"><strong>评分:8.5</strong></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="collect_form_26266893"></div>
+                    <div class="related-info" style="margin-bottom:-10px;">
+                        <a name="intro"></a>
+                        <h2>
+                            <i class="">流浪地球的剧情简介</i>
+                            · · · · · ·
+                        </h2>
+                        <div class="indent" id="link-report">
+                        <span property="v:summary" class="">
+                                　　近未来，科学家们发现太阳急速衰老膨胀，短时间内包括地球在内的整个太阳系都将被太阳所吞没。为了自救，人类提出一个名为“流浪地球”的大胆计划，即倾全球之力在地球表面建造上万座发动机和转向发动机，推动地球离开太阳系，用2500年的时间奔往另外一个栖息之地。中国航天员刘培强（吴京 饰）在儿子刘启四岁那年前往国际空间站，和国际同侪肩负起领航者的重任。转眼刘启（屈楚萧 饰）长大，他带着妹妹朵朵（赵今麦 饰）偷偷跑到地表，偷开外公韩子昂（吴孟达 饰）的运输车，结果不仅遭到逮捕，还遭遇了全球发动机停摆的事件。为了修好发动机，阻止地球坠入木星，全球开始展开饱和式营救，连刘启他们的车也被强征加入。在与时间赛跑的过程中，无数的人前仆后继，奋不顾身，只为延续百代子孙生存的希望……
+                                    <br>
+                                　　本片根据刘慈欣的同名小说改编。
+                        </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="bnt">
+                <a href="movieIndex.html">
+                    <button class="bnt">上一页</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="lib/jquery/jquery-2.1.1.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $('.collect_btn', '#interest_sect_level').each(function () {
+            Douban.init_collect_btn(this);
+        });
+        $('html').delegate(".indent .rec-sec .lnk-sharing", "click", function () {
+            moreurl(this, {
+                from: 'mv_sbj_db_share'
+            });
+        });
+    });
+</script>
+</html>

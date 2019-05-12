@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>电影列表</title>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="shortcut icon" href="bitbug_favicon%20(2).ico">
+    <link href="lib/bootstrap-3.3.7/css/bootstrap.css" type="text/css" rel="stylesheet">
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <!--图标-->
+            <span class="navbar-brand"><a href="index.html">娱乐看点</a></span>
+            <button class="navbar-toggle" data-toggle="collapse" data-target="#togglemenu">
+                <!--icon-bar是样式的划线-->
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="togglemenu">
+            <ul class="nav navbar-nav" id="mytab">
+                <li class="active"><a href="movie.html">电影</a></li>
+                <li><a href="#">综艺</a></li>
+                <li><a href="#">电视剧</a></li>
+                <li><a href="#">明星</a></li>
+                <li><a href="#">音乐</a></li>
+                <li><a href="#">游戏</a></li>
+                <li><a href="#">生活</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="login.html">登陆</a></li>
+                <li><a href="signup.html">注册</a></li>
+            </ul>
+            <form class="navbar-form navbar-right">
+                <div class="form-group">
+                    <div class="input-group">
+                        <input list="movie-search" class="form-control" placeholder="输入您要搜索的内容" id="navigator-search" autocomplete="off">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default">搜索</button>
+                        </span>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<a id="toTop" href="#togglemenu" class="hidden-md hidden-xs"><span class="glyphicon glyphicon-triangle-top"></span><br>至顶</a>
+<datalist id="movie-search">
+    <option>复仇者联盟4:终局之战</option>
+    <option>X战警:黑凤凰</option>
+    <option>你の名字</option>
+    <option>声之形</option>
+    <option>海贼王剧场版:最后的宝藏</option>
+    <option>恶灵骑士3:暗黑崛起</option>
+    <option>金刚狼4:掘地重生</option>
+    <option>阿凡达3</option>
+    <option>魔兽世界</option>
+    <option>喜羊羊与灰太狼之猪年咕咕咕</option>
+</datalist>
+<div class="container">
+    <div class="page-header">
+        <h1>娱乐看点<small>欢迎来到电影区</small></h1>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-md-4">
+            <div class="thumbnail">
+                <img src="img/movieImg/24.jpg" class="movie-face">
+                <div class="caption">
+                    <h3><strong>绿皮书Green Book<span style="color: grey">(2018)</span></strong></h3>
+                    <p>托尼（维果·莫腾森 Viggo Mortensen 饰）是一个吊儿郎当游手好闲的混混，
+                        在一家夜总会做侍者。这间夜总会因故要停业几个月，可托尼所要支付的房租和生活费不
+                        会因此取消，所以他的当务之急是去寻找另一份工作来填补这几个月的空缺。在这个节骨眼上，
+                        一位名叫唐雪莉（马赫沙拉·阿里 Mahershala Ali 饰）的黑人钢琴家提出雇佣托尼。</p>
+                    <p>
+                        <a href="#" class="btn btn-primary" role="button">喜欢&nbsp;<span class="glyphicon glyphicon-thumbs-up"></span>&nbsp;863</a>
+                        <a href="#" class="btn btn-default" role="button">不喜欢&nbsp;<span class="glyphicon glyphicon-thumbs-down"></span>&nbsp;78</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-4">
+            <div class="thumbnail">
+                <a href="movieIndex.html"><img src="img/movieImg/25.jpg" class="movie-face"></a>
+                <div class="caption">
+                    <h3><strong>流浪地球<span style="color: grey">(2019)</span></strong></h3>
+                    <p>近未来，科学家们发现太阳急速衰老膨胀，短时间内包括地球在内的整个太阳系都将被太阳所吞没。为了自救
+                        ，人类提出一个名为“流浪地球”的大胆计划，即倾全球之力在地球表面建造上万座发动机和转向发动机，推动
+                        地球离开太阳系，用2500年的时间奔往另外一个栖息之地。中国航天员刘培强（吴京 饰）在儿子刘启四岁那年前
+                        往国际空间站，和国际同侪肩负起领航者的重任。</p>
+                    <p>
+                        <a href="#" class="btn btn-primary" role="button">喜欢&nbsp;<span class="glyphicon glyphicon-thumbs-up"></span>&nbsp;3840</a>
+                        <a href="#" class="btn btn-default" role="button">不喜欢&nbsp;<span class="glyphicon glyphicon-thumbs-down"></span>&nbsp;143</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-4">
+            <div class="thumbnail">
+                <img src="img/movieImg/26.jpg" class="movie-face">
+                <div class="caption">
+                    <h3><strong>毒液：致命守护者<span style="color: grey">(2018)</span></strong></h3>
+                    <p>艾迪（汤姆·哈迪 Tom Hardy 饰）是一位深受观众喜爱的新闻记者，和女友安妮（米歇尔·威廉姆斯 Michelle
+                        Williams 饰）相恋多年，彼此之间感情十分要好。安妮是一名律师，接手了生命基金会的案件，在女友的邮箱里，
+                        艾迪发现了基金会老板德雷克（里兹·阿迈德 Riz Ahmed 饰）不为人知的秘密。</p>
+                    <p>
+                        <a href="#" class="btn btn-primary" role="button">喜欢&nbsp;<span class="glyphicon glyphicon-thumbs-up"></span>&nbsp;4564</a>
+                        <a href="#" class="btn btn-default" role="button">不喜欢&nbsp;<span class="glyphicon glyphicon-thumbs-down"></span>&nbsp;70</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-md-4">
+            <div class="thumbnail">
+                <img src="img/movieImg/27.jpg" class="movie-face">
+                <div class="caption">
+                    <h3><strong>海王 Aquaman‎<span style="color: grey">(2018)</span></strong></h3>
+                    <p>许多年前，亚特兰蒂斯女王（妮可·基德曼 Nicole Kidman 饰）和人类相知相恋，共同孕育了爱情的结晶——后来
+                        被陆地人称为海王的亚瑟·库瑞（杰森·莫玛 Jason Momoa 饰）。在成长的过程中，亚瑟接受海底导师维科（威廉·
+                        达福 Willem Dafoe 饰）的严苛训练，时刻渴望去看望母亲，然而作为混血的私生子这却是奢望。</p>
+                    <p>
+                        <a href="#" class="btn btn-primary" role="button">喜欢&nbsp;<span class="glyphicon glyphicon-thumbs-up"></span>&nbsp;789</a>
+                        <a href="#" class="btn btn-default" role="button">不喜欢&nbsp;<span class="glyphicon glyphicon-thumbs-down"></span>&nbsp;33</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-4">
+            <div class="thumbnail">
+                <img src="img/movieImg/28.jpg" class="movie-face">
+                <div class="caption">
+                    <h3><strong>我不是药神‎<span style="color: grey">(2018)</span></strong></h3>
+                    <p>普通中年男子程勇（徐峥 饰）经营着一家保健品店，失意又失婚。不速之客吕受益（王传君 饰）的到来，让他开辟了
+                        一条去印度买药做“代购”的新事业，虽然困难重重，但他在这条“买药之路”上发现了商机，一发不可收拾地做起
+                        了治疗慢粒白血病的印度仿制药独家代理商。</p>
+                    <p>
+                        <a href="#" class="btn btn-primary" role="button">喜欢&nbsp;<span class="glyphicon glyphicon-thumbs-up"></span>&nbsp;1080</a>
+                        <a href="#" class="btn btn-default" role="button">不喜欢&nbsp;<span class="glyphicon glyphicon-thumbs-down"></span>&nbsp;24</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-4">
+            <div class="thumbnail">
+                <img src="img/movieImg/29.jpg" class="movie-face">
+                <div class="caption">
+                    <h3><strong>声之形 聲の形‎‎<span style="color: grey">(2016)</span></strong></h3>
+                    <p>西宫硝子（早见沙织 饰）生来患有听觉障碍，要依靠助听器和外界交流，口语发音也因此格外的古怪。初中时，硝子
+                        转入了一所新的学校，特殊的生理缺陷让她成为了班上引人注目的独特存在，她因此收获了坚实的友情，却也遭到了
+                        以男生石田将也（入野自由 配音）为首的小团体的孤立和排挤。</p>
+                    <p>
+                        <a href="#" class="btn btn-primary" role="button">喜欢&nbsp;<span class="glyphicon glyphicon-thumbs-up"></span>&nbsp;2384</a>
+                        <a href="#" class="btn btn-default" role="button">不喜欢&nbsp;<span class="glyphicon glyphicon-thumbs-down"></span>&nbsp;214</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-md-4">
+            <div class="thumbnail">
+                <img src="img/movieImg/30.jpg" class="movie-face">
+                <div class="caption">
+                    <h3><strong>你的名字。 君の名は。<span style="color: grey">(2016)</span></strong></h3>
+                    <p>在远离大都会的小山村，住着巫女世家出身的高中女孩宫水三叶（上白石萌音 配音）。校园和家庭的原因本就让她充
+                        满烦恼，而近一段时间发生的奇怪事件，又让三叶摸不清头脑。不知从何时起，三叶在梦中就会变成一个住在东京的
+                        高中男孩。</p>
+                    <p>
+                        <a href="#" class="btn btn-primary" role="button">喜欢&nbsp;<span class="glyphicon glyphicon-thumbs-up"></span>&nbsp;935</a>
+                        <a href="#" class="btn btn-default" role="button">不喜欢&nbsp;<span class="glyphicon glyphicon-thumbs-down"></span>&nbsp;101</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-4">
+            <div class="thumbnail">
+                <img src="img/movieImg/31.jpg" class="movie-face">
+                <div class="caption">
+                    <h3><strong>无双 無雙‎<span style="color: grey">(2018)</span></strong></h3>
+                    <p>身陷囹圄的李问（郭富城 饰）被引渡回港，他原本隶属于一个的跨国假钞制贩组织。该组织曾犯下过多宗恶性案件，
+                        而首脑“画家”不仅始终逍遥法外，连真面目都没人知道。为了逼迫李问吐露“画家”真实身份，警方不惜用足以判
+                        死刑的假罪证使其就范。</p>
+                    <p>
+                        <a href="#" class="btn btn-primary" role="button">喜欢&nbsp;<span class="glyphicon glyphicon-thumbs-up"></span>&nbsp;956</a>
+                        <a href="#" class="btn btn-default" role="button">不喜欢&nbsp;<span class="glyphicon glyphicon-thumbs-down"></span>&nbsp;70</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-4">
+            <div class="thumbnail">
+                <img src="img/movieImg/33.jpg" class="movie-face">
+                <div class="caption">
+                    <h3><strong>爱乐之城La La Land<span style="color: grey">(2016)</span></strong></h3>
+                    <p>米娅（艾玛·斯通 Emma Stone 饰）渴望成为一名演员，但至今她仍旧只是片场咖啡厅里的一名平凡的咖啡师，
+                        尽管不停的参加着大大小小的试镜，但米娅收获的只有失败。</p>
+                    <p>
+                        <a href="#" class="btn btn-primary" role="button">喜欢&nbsp;<span class="glyphicon glyphicon-thumbs-up"></span>&nbsp;1210</a>
+                        <a href="#" class="btn btn-default" role="button">不喜欢&nbsp;<span class="glyphicon glyphicon-thumbs-down"></span>&nbsp;300</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-page">
+        <ul class="pagination pagination-md">
+            <li><a href="#">&laquo;</a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">...</a></li>
+            <li><a href="#">&raquo;</a></li>
+        </ul>
+    </div>
+</div>
+<div class="footer">
+    © 2018-2019 娱乐看点 <a href="#">About NetEase</a>
+</div>
+</body>
+<script src="lib/jquery/jquery-2.1.1.min.js"></script>
+<script src="lib/bootstrap-3.3.7/js/bootstrap.js"></script>
+<script>
+    $('#mytab a').click(function () {
+        $(this).tab('show');
+    });
+    $('.footer-page a').click(function () {
+        $('.active').removeClass('active');
+        $(this).addClass('active');
+    })
+</script>
+</html>
